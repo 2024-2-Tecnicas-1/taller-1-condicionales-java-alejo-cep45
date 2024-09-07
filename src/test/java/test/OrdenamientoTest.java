@@ -16,7 +16,7 @@ public class OrdenamientoTest {
     @Test
     public void test1() {
         String valorEsperado = "1 2 3 4";
-        String valorActual = Ordenamiento.evaluar(1, 2, 3, 4);
+        String valorActual = Ordenamiento.evaluar(4, 3, 2, 1);
         assertEquals(valorEsperado, valorActual);
     }
     

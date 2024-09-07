@@ -2,6 +2,7 @@
 package ejercicios;
 
 import static ejercicios.SetDeTenis.evaluar;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -10,8 +11,24 @@ import java.util.Scanner;
  */
 public class Ordenamiento {
     public static String evaluar(int numero1, int numero2, int numero3, int numero4) {
-        // TODO: Coloca aquí el código del ejercicio 5: Ordenamiento
-        return "";
+         int numeros[]=new int[4];
+         numeros[0]=numero1;
+         numeros[1]=numero2;
+         numeros[2]=numero3;
+         numeros[3]=numero4;
+         for(int i=0;i<4-1;i++){
+             for(int j=0;j<4-1-i;j++){
+                 if(numeros[j]>numeros[j+1]){
+                     int mn=numeros[j];
+                     numeros[j]=numeros[j+1];
+                     numeros[j+1]=mn;
+                    
+                     
+                 }
+             }
+         }
+         String replc=Arrays.toString(numeros);
+        return replc.replace(",", "").replace("[","").replace("]","");
     }
     
     public static void main(String[] args) {
